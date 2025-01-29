@@ -156,7 +156,7 @@ nav ul li a:hover::after {
   height: 11%;
 }
 .button .anchor:hover {
-  background-color: var(--color); 
+  background-color: var(--color);
 }
 .button span {
   position: relative;
@@ -543,7 +543,7 @@ nav ul li a:hover::after {
     width: 0;
   }
   100% {
-    width: 90%; 
+    width: 90%;
   }
 }
 
@@ -552,7 +552,7 @@ nav ul li a:hover::after {
     width: 0;
   }
   100% {
-    width: 80%; 
+    width: 80%;
   }
 }
 
@@ -561,7 +561,7 @@ nav ul li a:hover::after {
     width: 0;
   }
   100% {
-    width: 70%; 
+    width: 70%;
   }
 }
 
@@ -598,7 +598,7 @@ nav ul li a:hover::after {
   box-shadow: -2px 0px 6px #c3c0d199, 0px 0px 0px #232323;
   /* width: calc(40% - 20px); */
   height: 130px;
-    width: 141px;
+  width: 141px;
   box-sizing: border-box;
 }
 
@@ -612,6 +612,7 @@ nav ul li a:hover::after {
 .skill-box .figma img {
   width: 50px;
   height: auto;
+  filter: saturate(0);
 }
 
 /* ---------- Contact Section ------------  */
@@ -827,13 +828,12 @@ nav .fas {
     height: 50px;
     width: 50px;
   }
-  nav .fas {
+  /* nav .fas {
     display: block;
     font-size: 25px;
-  }
-  nav ul {
+  } */
+  /* nav ul {
     background-color: #232323;
-    /* background-color: #d62976; */
     position: fixed;
     top: 0;
     right: -200px;
@@ -843,12 +843,12 @@ nav .fas {
     font-weight: bold;
     z-index: 2;
     transition: right 0.5s;
-  }
+  } */
   nav ul li {
     display: block;
     margin: 40px;
   }
-  nav ul .fas {
+  /* nav ul .fas {
     position: absolute;
     margin-top: 5px;
     top: 25px;
@@ -856,6 +856,56 @@ nav .fas {
     color: white;
     font-weight: bold;
     cursor: pointer;
+  } */
+  nav {
+    width: 65%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.274);
+    backdrop-filter: blur(12px);
+    bottom: 0;
+    right: -100%;
+    transition: all 0.3s ease;
+    z-index: 999;
+    align-items: start;
+    padding: 12px;
+    display: block;
+  }
+  nav .fas {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 32px;
+    order: 1;
+  }
+
+  nav ul {
+    order: 2;
+    margin-top: 52px;
+  }
+
+  .nav-show {
+    right: 0;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 8px;
+    background-color: var(--color);
+    /* width: 100%; */
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  nav ul li a {
+    color: black;
+    width: 100%;
+    display: block;
+  }
+  nav img {
+    display: none;
   }
 
   .card {
@@ -1024,11 +1074,11 @@ nav .fas {
     align-items: center;
     margin-left: 85px;
   }
-  .copy-right p{
+  .copy-right p {
     font-weight: 400;
     margin-top: -8px;
   }
-  .social-medias{
+  .social-medias {
     margin-top: -30px;
   }
 }

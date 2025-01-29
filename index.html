@@ -11,77 +11,86 @@
     integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
 
   <div id="header">
-    <div class="container">
+    <div id="home" class="container">
       <nav>
-        <img src="assets/OG logo.jpg" class="logo"/> 
-       <ul id="sidemenu">
+        <img src="assets/OG logo.jpg" class="logo" />
+        <ul id="sidemenu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#service">Services</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()" ></i>
-        </ul> 
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav> 
-      
-<!-- ---- section---------------- - -->
- <section id="home"> Home section</section>
- <section id="about"> about section</section>
- <section id="services"> Service section</section>
- <section id="skills"> skill section</section>
- <section id="contact"> contact section</section>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+      </nav>
+      <div class="smallNav"
+        style="display: flex; justify-content: space-between; align-items: center; padding-inline: 24px; padding-block: 14px;">
+        <img style="width: 36px; height: 36px;" src="assets/OG logo.jpg" class="logo" />
+        <i style="font-size: 20px;" class="fas fa-bars" onclick="openmenu()"></i>
+      </div>
 
-      <div class="header-content" style=" margin-top: 23%; font-size: 25px;">
+      <!-- ---- section---------------- - -->
+      <!-- <section id="home"> Home section</section>
+      <section id="about"> about section</section>
+      <section id="services"> Service section</section>
+      <section id="skills"> skill section</section>
+      <section id="contact"> contact section</section> -->
+
+      <div class="header-content" style="margin-top: 23%; font-size: 25px;">
         <h3>Hey I'm <span>Raunak Jha</span></h3>
         <h1 class="profession">I'm <span class="typing">A Web developer</span></h1>
-      </div> 
+      </div>
       <div class="card">
         <div class="media">
-        <a class="socialContainer containerOne" href="https://www.instagram.com/ro.raunakk/" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
-            <path
-              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-            ></path>
-          </svg>
-        </a>
-      
-        <a class="socialContainer containerTwo" href="https://twitter.com/jha_raunakk" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" class="socialSvg twitterSvg">
-            <path
-              d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.657 4.657 0 0 0 2.048-2.569 9.325 9.325 0 0 1-2.95 1.127 4.65 4.65 0 0 0-7.917 4.24 13.18 13.18 0 0 1-9.57-4.85 4.65 4.65 0 0 0 1.44 6.2 4.63 4.63 0 0 1-2.104-.58v.06a4.65 4.65 0 0 0 3.73 4.56 4.65 4.65 0 0 1-2.096.08 4.65 4.65 0 0 0 4.34 3.22 9.32 9.32 0 0 1-5.77 1.99c-.37 0-.73-.02-1.09-.06a13.17 13.17 0 0 0 7.13 2.09c8.56 0 13.24-7.1 13.24-13.24 0-.2 0-.39-.01-.58a9.48 9.48 0 0 0 2.33-2.41z"
-            ></path>
-          </svg>
-        </a>
-      
-        <a class="socialContainer containerThree" href="https://www.linkedin.com/in/raunakjh/" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
-            <path
-              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-            ></path>
-          </svg>
-        </a>
-      
-        <a class="socialContainer containerOne" href="https://github.com/Raunakk18" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            ></path>
-          </svg>
-        </a>
+          <a class="socialContainer containerOne" href="https://www.instagram.com/ro.raunakk/" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+              </path>
+            </svg>
+          </a>
+
+          <a class="socialContainer containerTwo" href="https://twitter.com/jha_raunakk" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="socialSvg twitterSvg">
+              <path
+                d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.657 4.657 0 0 0 2.048-2.569 9.325 9.325 0 0 1-2.95 1.127 4.65 4.65 0 0 0-7.917 4.24 13.18 13.18 0 0 1-9.57-4.85 4.65 4.65 0 0 0 1.44 6.2 4.63 4.63 0 0 1-2.104-.58v.06a4.65 4.65 0 0 0 3.73 4.56 4.65 4.65 0 0 1-2.096.08 4.65 4.65 0 0 0 4.34 3.22 9.32 9.32 0 0 1-5.77 1.99c-.37 0-.73-.02-1.09-.06a13.17 13.17 0 0 0 7.13 2.09c8.56 0 13.24-7.1 13.24-13.24 0-.2 0-.39-.01-.58a9.48 9.48 0 0 0 2.33-2.41z">
+              </path>
+            </svg>
+          </a>
+
+          <a class="socialContainer containerThree" href="https://www.linkedin.com/in/raunakjh/" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
+          </a>
+
+          <a class="socialContainer containerOne" href="https://github.com/Raunakk18" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+              </path>
+            </svg>
+          </a>
         </div>
       </div>
-     
-<div class="button">
-  <a href="#" class="anchor" style="margin-left: 49px;">
-    <span>Download CV</span>
-  </a>
-</div>
+
+      <div class="button">
+        <a href="#" class="anchor" style="margin-left: 49px;">
+          <span>Download CV</span>
+        </a>
       </div>
     </div>
+  </div>
 
   <!-- ----------About Section----------- -->
 
@@ -90,7 +99,7 @@
       <div class="row">
         <div class="about-col-1">
           <div class="img-wrapper">
-            <img src="/assets/me.png" />
+            <img src="assets/me.png" />
           </div>
         </div>
         <div class="about-col-2">
@@ -103,11 +112,11 @@
             impactful results. </h2>
           </p>
           <div class="location">
-            <img src="/assets/loc.png" alt="location icon"> <span>Mumbai, India</span>
+            <img src="assets/loc.png" alt="location icon"> <span>Mumbai, India</span>
           </div>
           <div class="skill">
-            <div class="web"><img src="/assets/web dev.png" alt=""><span>Web Dev </span></div>
-            <div class="editor"><img src="/assets/editor.png" alt=""><span>Photo Editor</span></div>
+            <div class="web"><img src="assets/web dev.png" alt=""><span>Web Dev </span></div>
+            <div class="editor"><img src="assets/editor.png" alt=""><span>Photo Editor</span></div>
           </div>
         </div>
       </div>
@@ -118,39 +127,41 @@
   <div id="service">
     <div class="container">
       <div class="service-section">
-      <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">My <span>Services</span></h2>
 
-      <div class="service-container">
-        <div class="service-box">
-          <div class="web-service">
-            <h3><img src="/assets/web.png" alt=""> <span> Web Designer </span></h3>
-            <p>A motivated developer with a strong foundation in HTML, CSS, and JavaScript, eager to expand their skills in modern frameworks and tools. Dedicated to building clean, responsive interfaces and continuously learning to create impactful digital experiences.</p>
+        <div class="service-container">
+          <div class="service-box">
+            <div class="web-service">
+              <h3><img src="assets/web.png" alt=""> <span> Web Designer </span></h3>
+              <p>A motivated developer with a strong foundation in HTML, CSS, and JavaScript, eager to expand their
+                skills in modern frameworks and tools. Dedicated to building clean, responsive interfaces and
+                continuously learning to create impactful digital experiences.</p>
 
+            </div>
           </div>
-        </div>
 
-        <div class="service-box">
-          <div class="ui-ux">
-            <h3><img src="/assets/ui-ux.png" alt=""> <span>UI/UX Designer</span> </h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus obcaecati, rerum iure dolores
-              facere animi labore ducimus aspernatur veniam reiciendis ut, fuga quaerat unde mollitia numquam dicta
-              voluptate odit quia! Esse quam necessitatibus architecto!</p>
+          <div class="service-box">
+            <div class="ui-ux">
+              <h3><img src="assets/ui-ux.png" alt=""> <span>UI/UX Designer</span> </h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus obcaecati, rerum iure dolores
+                facere animi labore ducimus aspernatur veniam reiciendis ut, fuga quaerat unde mollitia numquam dicta
+                voluptate odit quia! Esse quam necessitatibus architecto!</p>
 
+            </div>
           </div>
-        </div>
 
-        <div class="service-box">
-          <div class="photo-editor">
-            <h3> <img src="/assets/img-editor.png" alt=""><span>Photo Editor</span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus obcaecati, rerum iure dolores
-              facere animi labore ducimus aspernatur veniam reiciendis ut, fuga quaerat unde mollitia numquam dicta
-              voluptate odit quia! Esse quam necessitatibus architecto!</p>
+          <div class="service-box">
+            <div class="photo-editor">
+              <h3> <img src="assets/img-editor.png" alt=""><span>Photo Editor</span></h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus obcaecati, rerum iure dolores
+                facere animi labore ducimus aspernatur veniam reiciendis ut, fuga quaerat unde mollitia numquam dicta
+                voluptate odit quia! Esse quam necessitatibus architecto!</p>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <!-- --------------Skills Section-------------- -->
@@ -160,63 +171,63 @@
       <div class="skills-container">
         <div class="skill-col1">
           <h3>Technical Skills</h3>
-          
+
           <ul>
             <li>
-                <h4>HTML <span>90</span></h4>
-                <div class="bar">
-                    <div class="bar-fill bar-html"></div>
-                </div>
+              <h4>HTML <span>90</span></h4>
+              <div class="bar">
+                <div class="bar-fill bar-html"></div>
+              </div>
             </li>
             <li>
-                <h4>CSS <span>80%</span></h4>
-                <div class="bar">
-                    <div class="bar-fill bar-css"></div>
-                </div>
+              <h4>CSS <span>80%</span></h4>
+              <div class="bar">
+                <div class="bar-fill bar-css"></div>
+              </div>
             </li>
             <li>
-                <h4>JavaScript <span>70%</span></h4>
-                <div class="bar">
-                    <div class="bar-fill bar-js"></div>
-                </div>
+              <h4>JavaScript <span>70%</span></h4>
+              <div class="bar">
+                <div class="bar-fill bar-js"></div>
+              </div>
             </li>
             <li>
-                <h4>CPP <span>40%</span></h4>
-                <div class="bar">
-                    <div class="bar-fill bar-cpp"></div>
-                </div>
+              <h4>CPP <span>40%</span></h4>
+              <div class="bar">
+                <div class="bar-fill bar-cpp"></div>
+              </div>
             </li>
-        </ul>
+          </ul>
         </div>
         <div class="skill-col2">
           <h1>Relevant Skill</h1>
           <div class="relavent-skill">
-           <div class="skill-container">
-            <div class="skill-box">
-              <div class="figma">
-                <!-- <img src="/assets/communication.png" alt=""> -->
-                <span>Figma</span>
+            <div class="skill-container">
+              <div class="skill-box">
+                <div class="figma">
+                  <img src="assets/img.png" alt="">
+                  <span>Figma</span>
                 </div>
-            </div>
-            <div class="skill-box">
-              <div class="figma">
-                <img src="/assets/figma.svg" alt="">
-                <span>Figma</span>
+              </div>
+              <div class="skill-box">
+                <div class="figma">
+                  <img src="assets/communication.png" alt="">
+                  <span>Figma</span>
                 </div>
-            </div>
-            <div class="skill-box">
-              <div class="figma">
-                <!-- <img src="/assets/figma.png" alt=""> -->
-                <span>Figma</span>
+              </div>
+              <div class="skill-box">
+                <div class="figma">
+                  <img src="assets/editor.png" alt="">
+                  <span>Figma</span>
                 </div>
-            </div>
-            <div class="skill-box" style="height: 130px;">
-              <div class="figma">
-                <!-- <img src="/assets/figma.png" alt=""> -->
-                <span>Figma</span>
+              </div>
+              <div class="skill-box" style="height: 130px;">
+                <div class="figma">
+                  <img src="assets/figma (2).png" alt="">
+                  <span>Figma</span>
                 </div>
+              </div>
             </div>
-           </div>
           </div>
         </div>
       </div>
@@ -228,123 +239,132 @@
   <div id="contact">
     <div class="container">
       <div class="contact-section">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="title">Contact Information </h1>
-          <div class="contact-sec">
-            <i class="icons fa-solid fa-phone"></i>
-          <div class="contact-sec-items">
-            Phone: +91 932113**** 
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="title">Contact Information </h1>
+            <div class="contact-sec">
+              <i class="icons fa-solid fa-phone"></i>
+              <div class="contact-sec-items">
+                Phone: +91 932113****
+              </div>
+            </div>
+            <div class="contact-sec">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="contact-sec-items">
+                Email: raunakjha654@gmail.com
+              </div>
+            </div>
+            <div class="card">
+              <a class="socialContainer containerOne" href="https://www.instagram.com/ro.raunakk/" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                  </path>
+                </svg>
+              </a>
+
+              <a class="socialContainer containerTwo" href="https://twitter.com/jha_raunakk" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" class="socialSvg twitterSvg">
+                  <path
+                    d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.657 4.657 0 0 0 2.048-2.569 9.325 9.325 0 0 1-2.95 1.127 4.65 4.65 0 0 0-7.917 4.24 13.18 13.18 0 0 1-9.57-4.85 4.65 4.65 0 0 0 1.44 6.2 4.63 4.63 0 0 1-2.104-.58v.06a4.65 4.65 0 0 0 3.73 4.56 4.65 4.65 0 0 1-2.096.08 4.65 4.65 0 0 0 4.34 3.22 9.32 9.32 0 0 1-5.77 1.99c-.37 0-.73-.02-1.09-.06a13.17 13.17 0 0 0 7.13 2.09c8.56 0 13.24-7.1 13.24-13.24 0-.2 0-.39-.01-.58a9.48 9.48 0 0 0 2.33-2.41z">
+                  </path>
+                </svg>
+              </a>
+
+              <a class="socialContainer containerThree" href="https://www.linkedin.com/in/raunakjh/" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg>
+              </a>
+
+              <a class="socialContainer containerOne" href="https://github.com/Raunakk18" target="_blank"
+                rel="noopener noreferrer">
+                <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                  </path>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-          <div class="contact-sec">
-            <i class="fa-regular fa-envelope"></i>
-          <div class="contact-sec-items">
-            Email: raunakjha654@gmail.com 
-          </div>
-        </div>
-<div class="card">
-  <a class="socialContainer containerOne" href="https://www.instagram.com/ro.raunakk/" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
-      <path
-        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-      ></path>
-    </svg>
-  </a>
-
-  <a class="socialContainer containerTwo" href="https://twitter.com/jha_raunakk" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24" class="socialSvg twitterSvg">
-      <path
-        d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.657 4.657 0 0 0 2.048-2.569 9.325 9.325 0 0 1-2.95 1.127 4.65 4.65 0 0 0-7.917 4.24 13.18 13.18 0 0 1-9.57-4.85 4.65 4.65 0 0 0 1.44 6.2 4.63 4.63 0 0 1-2.104-.58v.06a4.65 4.65 0 0 0 3.73 4.56 4.65 4.65 0 0 1-2.096.08 4.65 4.65 0 0 0 4.34 3.22 9.32 9.32 0 0 1-5.77 1.99c-.37 0-.73-.02-1.09-.06a13.17 13.17 0 0 0 7.13 2.09c8.56 0 13.24-7.1 13.24-13.24 0-.2 0-.39-.01-.58a9.48 9.48 0 0 0 2.33-2.41z"
-      ></path>
-    </svg>
-  </a>
-
-  <a class="socialContainer containerThree" href="https://www.linkedin.com/in/raunakjh/" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
-      <path
-        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-      ></path>
-    </svg>
-  </a>
-
-  <a class="socialContainer containerOne" href="https://github.com/Raunakk18" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
-      <path
-        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-      ></path>
-    </svg>
-  </a>
-</div>
-        </div>
         </div>
         <div class="contact-right">
           <h1 class="contact-heading">Send Me Message</h1>
           <div class="contact-container">
-          <form>
-            <div class="input-1">
-            <input type="text" id="f-name" placeholder="First Name" required>
-            <input type="text" id="l-name" placeholder="Last Name" required> 
+            <form>
+              <div class="input-1">
+                <input type="text" id="f-name" placeholder="First Name" required>
+                <input type="text" id="l-name" placeholder="Last Name" required>
+              </div>
+              <div class="input-2">
+                <input type="email" id="mail" placeholder="Email" required>
+                <input type="number" id="phone" placeholder="Number" required>
+              </div>
+              <div class="input-textarea">
+                <textarea name="Message" id="" spellcheck="true" rows="6" placeholder="Write Your Message"
+                  required></textarea>
+              </div>
+              <div class="btn-sec">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
           </div>
-          <div class="input-2">
-            <input type="email" id="mail" placeholder="Email" required>
-            <input type="number" id="phone" placeholder="Number" required>
-          </div>
-          <div class="input-textarea">
-            <textarea name="Message" id="" spellcheck="true" rows="6" placeholder="Write Your Message" required></textarea>
-          </div>
-          <div class="btn-sec">
-            <button type="submit">Send Message</button>
-          </div>
-          </form>
         </div>
-        </div>
-        
-  </div>
-  </div>
+
+      </div>
+    </div>
   </div>
   <!-- ------------footer section------------- -->
   <footer>
     <div class="footer-sec">
       <div class="social-medias">
-    <div class="card">
-      <a class="socialContainer containerOne" href="https://www.instagram.com/ro.raunakk/" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
-          <path
-            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-          ></path>
-        </svg>
-      </a>
-    
-      <a class="socialContainer containerTwo" href="https://twitter.com/jha_raunakk" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" class="socialSvg twitterSvg">
-          <path
-            d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.657 4.657 0 0 0 2.048-2.569 9.325 9.325 0 0 1-2.95 1.127 4.65 4.65 0 0 0-7.917 4.24 13.18 13.18 0 0 1-9.57-4.85 4.65 4.65 0 0 0 1.44 6.2 4.63 4.63 0 0 1-2.104-.58v.06a4.65 4.65 0 0 0 3.73 4.56 4.65 4.65 0 0 1-2.096.08 4.65 4.65 0 0 0 4.34 3.22 9.32 9.32 0 0 1-5.77 1.99c-.37 0-.73-.02-1.09-.06a13.17 13.17 0 0 0 7.13 2.09c8.56 0 13.24-7.1 13.24-13.24 0-.2 0-.39-.01-.58a9.48 9.48 0 0 0 2.33-2.41z"
-          ></path>
-        </svg>
-      </a>
-    
-      <a class="socialContainer containerThree" href="https://www.linkedin.com/in/raunakjh/" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
-          <path
-            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-          ></path>
-        </svg>
-      </a>
-    
-      <a class="socialContainer containerOne" href="https://github.com/Raunakk18" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
-          <path
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-          ></path>
-        </svg>
-      </a>
+        <div class="card">
+          <a class="socialContainer containerOne" href="https://www.instagram.com/ro.raunakk/" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+              </path>
+            </svg>
+          </a>
+
+          <a class="socialContainer containerTwo" href="https://twitter.com/jha_raunakk" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="socialSvg twitterSvg">
+              <path
+                d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.657 4.657 0 0 0 2.048-2.569 9.325 9.325 0 0 1-2.95 1.127 4.65 4.65 0 0 0-7.917 4.24 13.18 13.18 0 0 1-9.57-4.85 4.65 4.65 0 0 0 1.44 6.2 4.63 4.63 0 0 1-2.104-.58v.06a4.65 4.65 0 0 0 3.73 4.56 4.65 4.65 0 0 1-2.096.08 4.65 4.65 0 0 0 4.34 3.22 9.32 9.32 0 0 1-5.77 1.99c-.37 0-.73-.02-1.09-.06a13.17 13.17 0 0 0 7.13 2.09c8.56 0 13.24-7.1 13.24-13.24 0-.2 0-.39-.01-.58a9.48 9.48 0 0 0 2.33-2.41z">
+              </path>
+            </svg>
+          </a>
+
+          <a class="socialContainer containerThree" href="https://www.linkedin.com/in/raunakjh/" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
+          </a>
+
+          <a class="socialContainer containerOne" href="https://github.com/Raunakk18" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="copy-right">
+          <p>@ 2024 Raunakk All rights reserved</p>
+        </div>
+      </div>
     </div>
-    <div class="copy-right">
-      <p>@ 2024 Raunakk All rights reserved</p>
-    </div>
-    </div>
-  </div>
 
   </footer>
 

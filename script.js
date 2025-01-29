@@ -1,31 +1,16 @@
 // ----------------Animation Typing------------------//
-var typed = new Typed(".typing",{
-    strings:["A Web Developer", "A Web Desiner"],
-    typeSpeed :100,
-    backSpeed :80,
-    loop:true
+var typed = new Typed(".typing", {
+  strings: ["A Web Developer", "A Web Desiner"],
+  typeSpeed: 100,
+  backSpeed: 80,
+  loop: true
 
 });
 
-var sidemenu= document.getElementById("sidemenu");
-function openmenu(){
-  sidemenu.style.right="0";
+var sidemenu = document.getElementById("sidemenu");
+function openmenu() {
+  document.querySelector('nav').classList.add('nav-show')
 }
-function closemenu(){
-  sidemenu.style.right="-200px";
+function closemenu() {
+  document.querySelector('nav').classList.remove('nav-show')
 }
-
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default jump behavior
-    const targetId = this.getAttribute('href').substring(1); // Get the target section id
-    const targetSection = document.getElementById(targetId);
-
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: 'smooth' // Smooth scroll
-      });
-    }
-  });
-});
