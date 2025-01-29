@@ -808,10 +808,20 @@ form textarea {
 nav .fas {
   display: none;
 }
-
+.smallNav {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .container {
     padding: 5px 4%;
+  }
+
+  .smallNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
+    padding-block: 14px;
   }
 
   #header {
@@ -1080,5 +1090,92 @@ nav .fas {
   }
   .social-medias {
     margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .header-content {
+    margin-top: 0;
+  }
+  .header-content h3 {
+    margin-top: 30%;
+  }
+
+  .sub-title {
+    margin: 0;
+    text-align: center;
+  }
+  .sub-title::before {
+    left: 125px;
+    display: none;
+  }
+  .sub-title::after {
+    right: 125px;
+    left: auto;
+    display: none;
+  }
+  .skill {
+    margin: 0;
+    justify-content: center;
+    margin-block: 10px;
+  }
+  .img-wrapper {
+    margin: 0;
+    margin-block: 20px;
+  }
+  .img-wrapper img {
+    width: auto;
+    margin: 0;
+  }
+  .img-wrapper::after {
+    right: 0;
+    bottom: 0;
+  }
+  .img-wrapper::before {
+    left: 0;
+    top: 0;
+  }
+  .skill-container,
+  .skill-col2 h1 {
+    margin: 0;
+  }
+  .skill-col2 h1 {
+    text-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+    margin-block: 18px;
+  }
+  .skill-col2,
+  #l-name,
+  #phone,
+  form input,
+  .contact-container {
+    margin: 0;
+  }
+  .contact-right {
+    padding: 0;
+  }
+  .contact-right form {
+    padding: 8px;
+  }
+  .input-1,
+  .input-2,
+  .input-textarea {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  form button {
+    margin: 0;
+    width: auto;
+  }
+  .btn-sec {
+    display: flex;
+    justify-content: center;
+    margin-block: 28px;
+  }
+  .contact-heading {
+    margin-left: 12px;
   }
 }
