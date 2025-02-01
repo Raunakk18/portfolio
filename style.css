@@ -1073,9 +1073,29 @@ nav .fas {
     margin-top: -65px;
   }
 
-  .contact-right form {
-    width: 380px;
+  .input-1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 95VH;
+    gap: 15px;
   }
+
+  .input-2{
+    margin: 15px 0 0  15px;
+    display: flex;
+    flex-direction: column;
+    width: 95vh;
+    gap: 15px;
+  }
+  .input-textarea{
+    margin-left: 13px;
+    margin-top: 18px;
+    width: 84vw;
+  }
+  /* .contact-right form {
+    width: 380px;
+  } */
 
   form button {
     display: flex;
@@ -1158,14 +1178,14 @@ nav .fas {
   .contact-right form {
     padding: 8px;
   }
-  .input-1,
+  /* .input-1,
   .input-2,
   .input-textarea {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-top: 24px;
-  }
+  } */
   form button {
     margin: 0;
     width: auto;
