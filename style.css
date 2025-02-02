@@ -750,7 +750,7 @@ form textarea::placeholder {
 }
 
 form button {
-  width: 17%;
+  
   padding: 10px;
   margin-top: 18px;
   background: transparent;
@@ -811,6 +811,9 @@ nav .fas {
 .smallNav {
   display: none;
 }
+
+
+
 @media only screen and (max-width: 600px) {
   .container {
     padding: 5px 4%;
@@ -1097,13 +1100,13 @@ nav .fas {
     width: 380px;
   } */
 
-  form button {
+  /* form button {
     display: flex;
     width: 141px;
     justify-content: center;
     align-items: center;
     margin-left: 85px;
-  }
+  } */
   .copy-right p {
     font-weight: 400;
     margin-top: -8px;
@@ -1111,6 +1114,8 @@ nav .fas {
   .social-medias {
     margin-top: -30px;
   }
+
+  
 }
 
 @media only screen and (max-width: 516px) {
@@ -1189,13 +1194,16 @@ nav .fas {
   form button {
     margin: 0;
     width: auto;
+    margin: -8px 0 0 13px;
   }
   .btn-sec {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     margin-block: 28px;
   }
   .contact-heading {
     margin-left: 12px;
   }
+
+  
 }
