@@ -587,6 +587,7 @@ nav ul li a:hover::after {
 
 .skill-col2 h1 {
   margin: -60px 0 0 123px;
+  font-size: 25px;
 }
 
 .skill-container {
@@ -852,12 +853,12 @@ nav .fas {
   #header {
     height: 95vh;
   }
-  .header-content h3 {
+  .header-content  {
     margin-top: 90%;
     font-size: 25px;
   }
   .profession {
-    font-size: 37px;
+    font-size: 35px;
   }
   .logo {
     height: 50px;
@@ -1084,8 +1085,7 @@ nav .fas {
   }
 
   .skill-container {
-    width: 400px;
-    gap: 51px;
+    width: 352px;
   }
 
   .contact-section {
@@ -1153,7 +1153,7 @@ nav .fas {
     margin-top: 0;
   }
   .header-content h3 {
-    margin-top: 30%;
+    margin-top: 43vh;
   }
 
   .sub-title {
