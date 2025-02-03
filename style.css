@@ -596,6 +596,17 @@ nav ul li a:hover::after {
   gap: 25px;
   margin: 50px 0 0 15px;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .skill-box {
   background: #262626;
   padding: 20px;
@@ -604,8 +615,14 @@ nav ul li a:hover::after {
   box-shadow: -2px 0px 6px #c3c0d199, 0px 0px 0px #232323;
   /* width: calc(40% - 20px); */
   height: 130px;
-  width: 141px;
+  width: 45%;
   box-sizing: border-box;
+ animation: fadeInUp 0.5s ease forwards;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-box:hover {
+  transform: translateY(-10px); /* Move the box up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 }
 
 .skill-box .figma {
