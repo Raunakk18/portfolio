@@ -20,12 +20,17 @@ body {
   background-color: var(--background-color);
   color: white;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
 section {
   /* height: 100vh;
   padding: 20px;
@@ -187,7 +192,8 @@ nav ul li a:hover::after {
 }
 
 .img-wrapper img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 15px;
 }
 
@@ -232,7 +238,7 @@ nav ul li a:hover::after {
   height: 40px;
   border-bottom: 5px solid var(--color);
   border-right: 5px solid var(--color);
-  right: 198px;
+  right: 150px;
   bottom: -5px;
 }
 .sub-title::before {
@@ -628,6 +634,8 @@ nav ul li a:hover::after {
 .contact-left {
   /* flex-basis: 40%; */
   padding: 30px 50px 50px 30px;
+  border-right: 3px solid var(--color);
+  height: 85%;
 }
 i {
   display: flex;
@@ -726,7 +734,7 @@ i {
 }
 
 .contact-right form {
-  width: 150%;
+  width: auto;
 }
 
 .contact-container {
@@ -750,7 +758,6 @@ form textarea::placeholder {
 }
 
 form button {
-  
   padding: 10px;
   margin-top: 18px;
   background: transparent;
@@ -811,8 +818,6 @@ nav .fas {
 .smallNav {
   display: none;
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .container {
@@ -1045,6 +1050,9 @@ nav .fas {
   .skill-col1 {
     margin-top: -15px;
   }
+  .skill-col1 h3 {
+    margin-left: 92px;
+  }
   .skill-col2 {
     order: 2;
   }
@@ -1069,44 +1077,33 @@ nav .fas {
   }
   .contact-left {
     order: 1;
+    position: relative;
+    height: 300px;
+    border-right: none;
+    /* border-bottom: 3px solid var(--color); */
+    
+  }
+
+  .contact-left::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    border-bottom: 3px solid var(--color);
   }
 
   .contact-right {
     order: 2;
     margin-top: -65px;
   }
-
-  .input-1{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    width: 95VH;
-    gap: 15px;
+  .contact-section h1 {
+    font-size: 20px;
   }
 
-  .input-2{
-    margin: 15px 0 0  15px;
-    display: flex;
-    flex-direction: column;
-    width: 95vh;
-    gap: 15px;
+  .contact-right h1{
+    margin-top: 80px;
   }
-  .input-textarea{
-    margin-left: 13px;
-    margin-top: 18px;
-    width: 84vw;
-  }
-  /* .contact-right form {
-    width: 380px;
-  } */
-
-  /* form button {
-    display: flex;
-    width: 141px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 85px;
-  } */
   .copy-right p {
     font-weight: 400;
     margin-top: -8px;
@@ -1114,8 +1111,24 @@ nav .fas {
   .social-medias {
     margin-top: -30px;
   }
+  .input-1{
+    display: flex;
+    flex-direction: column;
+    width: 165vw;
+    margin-left: 12px;
+  }
+  .input-2{
+    display: flex;
+    flex-direction: column;
+    width: 165vw;
+    margin-left: 12px;
+  }
 
-  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"]{
+    height: 34px;
+  }
 }
 
 @media only screen and (max-width: 516px) {
@@ -1144,6 +1157,7 @@ nav .fas {
     justify-content: center;
     margin-block: 10px;
   }
+
   .img-wrapper {
     margin: 0;
     margin-block: 20px;
@@ -1177,20 +1191,21 @@ nav .fas {
   .contact-container {
     margin: 0;
   }
+
   .contact-right {
     padding: 0;
   }
   .contact-right form {
     padding: 8px;
   }
-  /* .input-1,
+  .input-1,
   .input-2,
   .input-textarea {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-top: 24px;
-  } */
+  }
   form button {
     margin: 0;
     width: auto;
@@ -1198,12 +1213,10 @@ nav .fas {
   }
   .btn-sec {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     margin-block: 28px;
   }
   .contact-heading {
     margin-left: 12px;
   }
-
-  
 }
