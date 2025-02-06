@@ -634,18 +634,17 @@ nav ul li a:hover::after {
   gap: 10px;
 }
 
-.skill-box .figma img {
-  filter: invert(1) saturate(0);
-  width: 60px;
-  height: 60px;
-}
-
 .skill-box i {
   font-size: 45px;
 }
 .skill-box span {
   font-size: 20px;
   margin-top: 7px;
+}
+.skill-box img{
+  filter: invert(1) ;
+  height: 60px;
+  width: 60px;
 }
 
 .fa-figma:before {
