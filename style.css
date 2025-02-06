@@ -401,6 +401,7 @@ nav ul li a:hover::after {
   height: 50px;
   width: 50px;
   transition: transform 0.3s ease;
+  filter: invert(1);
 }
 
 .service-box h3 {
@@ -618,8 +619,8 @@ nav ul li a:hover::after {
   height: 130px;
   width: 45%;
   box-sizing: border-box;
- animation: fadeInUp 0.5s ease forwards;
- transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skill-box:hover {
   transform: translateY(-10px); /* Move the box up */
@@ -634,17 +635,33 @@ nav ul li a:hover::after {
 }
 
 .skill-box .figma img {
-  width: 50px;
-  height: auto;
-  filter: saturate(0);
+  filter: invert(1) saturate(0);
+  width: 60px;
+  height: 60px;
 }
 
+.skill-box i {
+  font-size: 45px;
+}
+.skill-box span {
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.fa-figma:before {
+  content: "\f799";
+  font-size: 55px;
+}
 /* ---------- Contact Section ------------  */
 
 .contact-section {
   display: flex;
   background-color: var(--sec-color);
   border-top-left-radius: 15px;
+}
+
+.contact-section h1 {
+  font-size: 20px;
 }
 .row {
   display: flex;
@@ -853,7 +870,7 @@ nav .fas {
   #header {
     height: 95vh;
   }
-  .header-content  {
+  .header-content {
     margin-top: 90%;
     font-size: 25px;
   }
@@ -864,35 +881,12 @@ nav .fas {
     height: 50px;
     width: 50px;
   }
-  /* nav .fas {
-    display: block;
-    font-size: 25px;
-  } */
-  /* nav ul {
-    background-color: #232323;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    font-weight: bold;
-    z-index: 2;
-    transition: right 0.5s;
-  } */
+
   nav ul li {
     display: block;
     margin: 40px;
   }
-  /* nav ul .fas {
-    position: absolute;
-    margin-top: 5px;
-    top: 25px;
-    left: 25px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  } */
+
   nav {
     width: 65%;
     height: 100%;
@@ -952,6 +946,7 @@ nav .fas {
     font-size: 40px;
     font-weight: 400;
     margin: -60px 0 0 100px;
+    position: relative;
   }
   .sub-title::after {
     left: 185px;
@@ -965,6 +960,16 @@ nav .fas {
     width: 20px;
     left: -7px;
     top: -3px;
+  }
+
+  .sub-title::before {
+    left: 0;
+    top: 0;
+  }
+
+  .sub-title::after {
+    right: 0;
+    bottom: 0;
   }
   .row {
     flex-direction: column;
@@ -1098,11 +1103,10 @@ nav .fas {
     height: 300px;
     border-right: none;
     /* border-bottom: 3px solid var(--color); */
-    
   }
 
-  .contact-left::after{
-    content: '';
+  .contact-left::after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 10%;
@@ -1118,7 +1122,7 @@ nav .fas {
     font-size: 20px;
   }
 
-  .contact-right h1{
+  .contact-right h1 {
     margin-top: 80px;
   }
   .copy-right p {
@@ -1128,13 +1132,13 @@ nav .fas {
   .social-medias {
     margin-top: -30px;
   }
-  .input-1{
+  .input-1 {
     display: flex;
     flex-direction: column;
     width: 165vw;
     margin-left: 12px;
   }
-  .input-2{
+  .input-2 {
     display: flex;
     flex-direction: column;
     width: 165vw;
@@ -1143,7 +1147,7 @@ nav .fas {
 
   input[type="text"],
   input[type="email"],
-  input[type="number"]{
+  input[type="number"] {
     height: 34px;
   }
 }
@@ -1235,5 +1239,67 @@ nav .fas {
   }
   .contact-heading {
     margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .img-wrapper img::before {
+    width: 100%;
+    height: auto;
+    margin-left: -13px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-content h3 {
+    margin-top: 43vh;
+    font-size: 32px;
+  }
+  .profession {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .sub-title {
+    left: 23px;
+  }
+  .skill {
+    display: flex;
+    justify-content: center;
+  }
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-left: -13px;
+  }
+  .img-wrapper::before {
+    top: 0;
+    left: -13px;
+  }
+  .img-wrapper::after {
+    right: 7px;
+  }
+  .skill-container {
+    position: relative;
+    left: 3px;
+    gap: 40px;
+    width: 444px;
+  }
+  #l-name,
+  #phone {
+    margin-left: 0;
+  }
+  .input-textarea {
+    width: 110%;
+    margin-left: 11px;
+  }
+  .btn-sec {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-content h3 {
+    margin-top: 43vh;
   }
 }
