@@ -1277,12 +1277,12 @@ nav .fas {
   .img-wrapper::after {
     right: 7px;
   }
-  .skill-container {
+  /* .skill-container {
     position: relative;
     left: 3px;
     gap: 40px;
     width: 444px;
-  }
+  } */
   #l-name,
   #phone {
     margin-left: 0;
