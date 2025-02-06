@@ -1252,10 +1252,10 @@ nav .fas {
 @media screen and (max-width: 700px) {
   .header-content h3 {
     margin-top: 43vh;
-    font-size: 32px;
+    font-size: 28px;
   }
   .profession {
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 500;
   }
   .sub-title {
@@ -1265,18 +1265,18 @@ nav .fas {
     display: flex;
     justify-content: center;
   }
-  .img-wrapper img {
+  /* .img-wrapper img {
     width: 100%;
     height: auto;
     margin-left: -13px;
-  }
-  .img-wrapper::before {
+  } */
+  /* .img-wrapper::before {
     top: 0;
     left: -13px;
   }
   .img-wrapper::after {
     right: 7px;
-  }
+  } */
   /* .skill-container {
     position: relative;
     left: 3px;
@@ -1287,10 +1287,10 @@ nav .fas {
   #phone {
     margin-left: 0;
   }
-  .input-textarea {
+  /* .input-textarea {
     width: 110%;
     margin-left: 11px;
-  }
+  } */
   .btn-sec {
     display: flex;
     justify-content: center;
