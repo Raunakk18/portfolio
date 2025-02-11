@@ -4,11 +4,20 @@
   --color: #f5d888;
   --background-color: #181818;
   --sec-color: #282828;
+  --head-text:white;
   --text-color: #f8f8ffcc;
   --sec-text-color: white;
+  --sub-text: #d3d3d3;
   --box-shadow: -2px 0px 6px #c3c0d199, 0px 0px 0px #232323;
-  /* --border: 7px solid #f5d888; */
+  
 }
+/* :root{
+  --color:#7e22ce;
+  --background-color: white;
+  --sec-color:#f1f1f1;
+  --head-text:black;
+  --sub-text: rgb(111, 110, 110);
+} */
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +53,7 @@ section {
   background-image: url("assets/BG.png");
   background-size: cover;
   background-position: center;
+  background-color: black;
 }
 
 .logo {
@@ -98,11 +108,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* #moon{
-  width: 30px;
-  cursor: pointer;
-} */
-*/
 
 
 /* --------- Header Section ------------ */
@@ -227,7 +232,7 @@ nav ul li a:hover::after {
   position: relative;
   font-size: 60px;
   font-weight: 600px;
-  color: white;
+  color: var(--head-text);
   margin-top: 10px;
   margin-left: 30%;
 }
@@ -256,7 +261,7 @@ nav ul li a:hover::after {
 .about-col-2 p {
   font-size: 18px;
   line-height: 1.6;
-  color: #d3d3d3;
+  color: var(--sub-text);
   margin-top: 70px;
 }
 
@@ -264,9 +269,7 @@ nav ul li a:hover::after {
   color: var(--color);
 }
 
-.description {
-  color: aquamarine;
-}
+
 
 .description span {
   display: inline-block;
@@ -274,6 +277,11 @@ nav ul li a:hover::after {
   margin-top: -15px;
   font-size: 50px;
   color: var(--color);
+}
+
+.about-col-2 h2{
+  font-size: 22px;
+  color: var(--sub-text);
 }
 
 .location {
@@ -310,6 +318,7 @@ nav ul li a:hover::after {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  color: var(--sub-text);
 }
 
 .web span::after {
@@ -342,6 +351,7 @@ nav ul li a:hover::after {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  color: var(--sub-text);
 }
 
 .editor span::after {
@@ -372,6 +382,7 @@ nav ul li a:hover::after {
 .heading {
   margin-bottom: 50px;
   font-size: 35px;
+  color: var(--head-text);
   font-weight: bold;
   text-align: center;
 }
@@ -473,6 +484,7 @@ nav ul li a:hover::after {
   font-size: 40px;
   font-weight: bold;
   margin-left: -101px;
+  color: var(--head-text);
 }
 .skill-heading span {
   color: var(--color);
@@ -485,6 +497,7 @@ nav ul li a:hover::after {
   margin-left: 120px;
   font-size: 24px;
   margin-bottom: 25px;
+  color: var(--head-text);
 }
 
 .skill-col1 ul {
@@ -498,6 +511,7 @@ nav ul li a:hover::after {
 .skill-col1 h4 {
   font-size: 18px;
   margin-bottom: 5px;
+  color: var(--head-text);
 }
 
 .skill-col1 span {
@@ -590,6 +604,7 @@ nav ul li a:hover::after {
 .skill-col2 h1 {
   margin: -60px 0 0 123px;
   font-size: 25px;
+  color: var(--head-text);
 }
 
 .skill-container {
@@ -662,6 +677,7 @@ nav ul li a:hover::after {
 
 .contact-section h1 {
   font-size: 20px;
+  color: var(--head-text);
 }
 .row {
   display: flex;
@@ -671,6 +687,7 @@ nav ul li a:hover::after {
   padding: 30px 50px 50px 30px;
   border-right: 3px solid var(--color);
   height: 85%;
+  color: var(--head-text);
 }
 i {
   display: flex;
@@ -798,7 +815,7 @@ form button {
   background: transparent;
   border: 2px solid var(--color);
   border-radius: 10px;
-  color: white;
+  color: var(--head-text);
   font-size: 18px;
   font-weight: 600px;
   cursor: pointer;
@@ -850,7 +867,7 @@ footer .card {
   font-size: 27px;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color:var(--head-text);
   font-weight: bold;
   left: 36%;
   text-decoration: none;
@@ -864,6 +881,7 @@ footer .card {
   font-weight: bold;
   display: flex;
   margin-top: 35px;
+  color: var(--head-text);
 }
 
 nav .fas {
