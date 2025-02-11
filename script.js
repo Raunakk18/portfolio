@@ -14,3 +14,12 @@ function openmenu() {
 function closemenu() {
   document.querySelector('nav').classList.remove('nav-show')
 }
+const links = document.querySelectorAll('#sidemen li a')
+
+links.forEach(d=>{
+   d.addEventListener('click', ()=>{
+       document.querySelector('nav').classList.remove('nav-show')
+})
+})
+
+
