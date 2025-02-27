@@ -286,6 +286,7 @@ nav ul li a:hover::after {
 
 .location {
   margin-top: -58px;
+  display: flex;
 }
 .location img {
   height: 20px;
