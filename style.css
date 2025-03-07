@@ -244,7 +244,9 @@ nav ul li a:hover::after {
   height: 40px;
   border-bottom: 5px solid var(--color);
   border-right: 5px solid var(--color);
-  right: 150px;
+  /* right: 150px; */
+  right: 60px;
+
   bottom: -5px;
 }
 .sub-title::before {
@@ -870,7 +872,8 @@ footer .card {
   justify-content: space-between;
   color:var(--head-text);
   font-weight: bold;
-  left: 36%;
+  /* left: 36%; */
+  left: 33%;
   text-decoration: none;
   margin-top: -12px;
 }
@@ -1291,3 +1294,127 @@ nav .fas {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .container {
+    max-width: 90%; /* Adjust width for better spacing */
+    /* padding: 20px;
+  } */ 
+
+  .header-content{
+    margin-top: 70%;
+  }
+
+  .header-content h3{
+    font-size: 40px;
+  }
+
+  .profession{
+    font-size: 50px;
+  }
+  nav {
+    width: 65%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.274);
+    backdrop-filter: blur(12px);
+    bottom: 0;
+    right: -100%;
+    transition: all 0.3s ease;
+    z-index: 999;
+    align-items: start;
+    padding: 12px;
+    display: block;
+  }
+  nav .fas {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 32px;
+    order: 1;
+  }
+
+  nav ul {
+    order: 2;
+    margin-top: 52px;
+  }
+
+  .nav-show {
+    right: 0;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 8px;
+    background-color: var(--color);
+    /* width: 100%; */
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  nav ul li a {
+    color: black;
+    width: 100%;
+    display: block;
+  }
+  nav img {
+    display: none;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-col-2 {
+    order: 1;
+  }
+  .about-col-1 {
+    order: 2;
+  }
+
+  .sub-title{
+    left: 5%;
+    margin-top: 0;
+  }
+
+  .sub-title::after {
+   right: 100px;
+  }
+  .description{
+    left: 37%;
+    margin: 0;
+    position: relative;
+}
+.about-col-2 p{
+  margin-top: 10px;
+  }
+
+  .about-col-2 h2{
+    text-align: center;
+    left: 13%;
+    position: relative;
+    font-size: 19px;
+}
+  .location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .home-content {
+    flex-direction: column; /* Adjust layout for better readability */
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .img-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+}
