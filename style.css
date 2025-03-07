@@ -244,9 +244,7 @@ nav ul li a:hover::after {
   height: 40px;
   border-bottom: 5px solid var(--color);
   border-right: 5px solid var(--color);
-  /* right: 150px; */
-  right: 60px;
-
+  right: 150px;
   bottom: -5px;
 }
 .sub-title::before {
@@ -872,8 +870,7 @@ footer .card {
   justify-content: space-between;
   color:var(--head-text);
   font-weight: bold;
-  /* left: 36%; */
-  left: 33%;
+  left: 36%;
   text-decoration: none;
   margin-top: -12px;
 }
