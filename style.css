@@ -113,8 +113,9 @@ nav ul li a:hover::after {
 /* --------- Header Section ------------ */
 
 .header-content h3 {
-  margin-top: 23%;
-  font-size: 25px;
+  margin-top: 30%;
+  font-size: 35px;
+  font-weight: 600;
 }
 .header-content span {
   color: var(--color);
@@ -124,8 +125,9 @@ nav ul li a:hover::after {
 }
 
 .profession {
-  margin-top: 5px;
-  font-size: 35px;
+  margin-top: 3px;
+  font-size: 42px;
+  font-weight: 600;
 }
 
 .media {
@@ -406,13 +408,14 @@ nav ul li a:hover::after {
   box-shadow: -2px 0px 6px #c3c0d199, 0px 0px 0px #232323;
 }
 
-.service-box {
+/* .service-box {
   transition: transform 0.3s ease;
-}
+} */
 
 .service-box img {
   height: 50px;
   width: 50px;
+  margin-top: 15px;
   transition: transform 0.3s ease;
   filter: invert(1);
 }
@@ -424,10 +427,11 @@ nav ul li a:hover::after {
 }
 
 .service-box span {
-  font-size: 23px;
+  font-size: 33px;
   margin-top: 18px;
   margin-left: 15px;
-  transition: transform 0.3s ease;
+  font-weight: bold;
+  /* transition: transform 0.3s ease; */
 }
 .service-box p {
   font-size: 20px;
@@ -466,9 +470,9 @@ nav ul li a:hover::after {
   bottom: -3px;
 }
 
-.service-box:hover {
+/* .service-box:hover {
   transform: scale(1.03);
-}
+} */
 
 /* ----------------- Skill Section--------------- */
 #skills {
@@ -496,11 +500,18 @@ nav ul li a:hover::after {
 
 .skill-col1 h3 {
   margin-left: 120px;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 25px;
   color: var(--head-text);
+  font-weight: bold;
 }
 
+.techinal-skill{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
 .skill-col1 ul {
   list-style: none;
   padding: 0;
@@ -603,9 +614,10 @@ nav ul li a:hover::after {
 }
 
 .skill-col2 h1 {
-  margin: -60px 0 0 123px;
-  font-size: 25px;
+  margin: -60px 0 0 95px;
+  font-size: 30px;
   color: var(--head-text);
+  font-weight: bold;
 }
 
 .skill-container {
@@ -1104,8 +1116,9 @@ nav .fas {
   .skill-col1 {
     margin-top: -15px;
   }
-  .skill-col1 h3 {
-    margin-left: 92px;
+  .techinal-skill{
+    font-size: 28px;
+    margin-top: -7%;
   }
   .skill-col2 {
     order: 2;
@@ -1209,6 +1222,7 @@ nav .fas {
   .header-content h3 {
     margin-top: 51vh;
     font-size: 23px;
+    font-weight: 400;
   }
 
   .sub-title {
@@ -1413,5 +1427,33 @@ nav .fas {
   .img-wrapper img {
     max-width: 100%;
     height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .sidemenu {
+        display: none;
+      }
+    }
+    
+  
+    .skills-container, .projects-container {
+      grid-template-columns: 1fr;
+    }
   }
 }
