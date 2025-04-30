@@ -197,10 +197,13 @@ nav ul li a:hover::after {
   position: relative;
   width: 100%;
   margin-left: 15px;
+  margin: auto;
 }
 
 .img-wrapper img {
+  width: 100%;
   max-width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 15px;
 }
@@ -246,7 +249,7 @@ nav ul li a:hover::after {
   height: 40px;
   border-bottom: 5px solid var(--color);
   border-right: 5px solid var(--color);
-  right: 150px;
+  /* right: 150px; */
   bottom: -5px;
 }
 .sub-title::before {
@@ -624,6 +627,7 @@ nav ul li a:hover::after {
 }
 
 .skill-container {
+  width: 360px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -885,7 +889,7 @@ footer .card {
   justify-content: space-between;
   color:var(--head-text);
   font-weight: bold;
-  left: 34%;
+  left: 30%;
   text-decoration: none;
   margin-top: -12px;
 }
@@ -1221,6 +1225,7 @@ nav .fas {
     font-size: 14px;
   }
 }
+ 
 
 @media only screen and (max-width: 516px) {
   .header-content {
@@ -1256,6 +1261,7 @@ nav .fas {
   }
   .img-wrapper img {
     width: auto;
+    max-width: 100%;
     margin: 0;
   }
   .img-wrapper::after {
@@ -1315,26 +1321,28 @@ nav .fas {
   }
 }
 
+
  
 @media (min-width: 425px) and (max-width: 600px) {
-  .img-wrapper {
+  /* .img-wrapper {
       width: 90%;
-      max-width: 380px; /* Slightly larger for big mobile screens */
-  }
+      max-width: 380px; 
+      margin: 0 auto;
+    } */
 
-  .img-wrapper img {
-      max-width: 464px; /* Adjust image size */
+  /* .img-wrapper img {
+      max-width: 412px; 
       height: auto;
       margin-left: -13px;
-  }
+  } */
   .img-wrapper::before{
-    left: -16px;
+    /* left: -16px; */
     top: auto;
   }
-  .img-wrapper::after{
+  /* .img-wrapper::after{
     bottom: 0;
-    right: -70px;
-  }
+    right: -45px;
+  } */
   #l-name, #phone {
     left: 0;
   }
@@ -1345,7 +1353,7 @@ nav .fas {
     margin-left: 0;
   }
   .input-textarea{
-    width: 109%;
+    width: 100%
   }
   footer .card{
     left: 19%;
@@ -1465,10 +1473,10 @@ nav .fas {
   .img-wrapper img {
     max-width: 100%;
     height: auto;
-    max-width: 380px;
+    /* max-width: 380px;
     margin-left: -37px;
     overflow: overlay;
-    margin-top: 20%;
+    margin-top: 20%; */
   }
 
   .img-wrapper::before {
@@ -1579,3 +1587,8 @@ nav .fas {
   
 }
   
+@media only screen and (width: 375px) {
+  textarea {
+    width: 80%; /* or your desired value like 320px */
+  }
+}
