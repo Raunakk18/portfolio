@@ -23,7 +23,7 @@ var sidemenu = document.getElementById("sidemenu");
 // }).then(
 //   message => alert(message)
 // );
-}
+
 
 function openmenu() {
   document.querySelector('nav').classList.add('nav-show');
