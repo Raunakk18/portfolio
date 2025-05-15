@@ -195,6 +195,7 @@ nav ul li a:hover::after {
 
 .img-wrapper {
   position: relative;
+   top: 10%;
   width: 100%;
   margin-left: 15px;
   margin: auto;
@@ -267,7 +268,7 @@ nav ul li a:hover::after {
   font-size: 18px;
   line-height: 1.6;
   color: var(--sub-text);
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 .about-col-2 h1 span {
@@ -290,7 +291,7 @@ nav ul li a:hover::after {
 }
 
 .location {
-  margin-top: -58px;
+  margin-top: -12px;
   display: flex;
 }
 .location img {
@@ -309,7 +310,7 @@ nav ul li a:hover::after {
 
 .skill {
   display: flex;
-  margin: 25px 0 0 10px;
+  margin: 10px 0 0 10px;
 }
 
 .web img {
